@@ -32,7 +32,7 @@
             this.buttonExit = new System.Windows.Forms.Button();
             this.labelName = new System.Windows.Forms.Label();
             this.labelPw = new System.Windows.Forms.Label();
-            this.textBox = new System.Windows.Forms.TextBox();
+            this.textBoxNa = new System.Windows.Forms.TextBox();
             this.textBoxPw = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -77,19 +77,20 @@
             this.labelPw.TabIndex = 4;
             this.labelPw.Text = "密码";
             // 
-            // textBox
+            // textBoxNa
             // 
-            this.textBox.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox.Location = new System.Drawing.Point(141, 68);
-            this.textBox.Name = "textBox";
-            this.textBox.Size = new System.Drawing.Size(135, 27);
-            this.textBox.TabIndex = 5;
+            this.textBoxNa.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBoxNa.Location = new System.Drawing.Point(141, 68);
+            this.textBoxNa.Name = "textBoxNa";
+            this.textBoxNa.Size = new System.Drawing.Size(135, 27);
+            this.textBoxNa.TabIndex = 5;
             // 
             // textBoxPw
             // 
             this.textBoxPw.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBoxPw.Location = new System.Drawing.Point(141, 143);
             this.textBoxPw.Name = "textBoxPw";
+            this.textBoxPw.PasswordChar = '*';
             this.textBoxPw.Size = new System.Drawing.Size(135, 27);
             this.textBoxPw.TabIndex = 6;
             // 
@@ -110,7 +111,7 @@
             this.ClientSize = new System.Drawing.Size(358, 325);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxPw);
-            this.Controls.Add(this.textBox);
+            this.Controls.Add(this.textBoxNa);
             this.Controls.Add(this.labelPw);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.buttonExit);
@@ -130,7 +131,7 @@
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.Label labelPw;
-        private System.Windows.Forms.TextBox textBox;
+        private System.Windows.Forms.TextBox textBoxNa;
         private System.Windows.Forms.TextBox textBoxPw;
         private System.Windows.Forms.Label label1;
     }
