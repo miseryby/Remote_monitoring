@@ -35,6 +35,7 @@
             this.textBoxNa = new System.Windows.Forms.TextBox();
             this.textBoxPw = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // buttonLogin
@@ -104,11 +105,21 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "远程监控系统管理员登陆界面";
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 15;
+            this.listBox1.Location = new System.Drawing.Point(342, 68);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 94);
+            this.listBox1.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 325);
+            this.ClientSize = new System.Drawing.Size(509, 325);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxPw);
             this.Controls.Add(this.textBoxNa);
@@ -134,6 +145,7 @@
         private System.Windows.Forms.TextBox textBoxNa;
         private System.Windows.Forms.TextBox textBoxPw;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
