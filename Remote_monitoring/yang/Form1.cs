@@ -19,7 +19,14 @@ namespace Remote_monitoring
 
         private void button1_Click(object sender, EventArgs e)
         {
+            yang.FormMain formMain = new yang.FormMain();
+            formMain.Show();
+            this.Hide();
+        }
 
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            System.Environment.Exit(0);
         }
     }
 }
