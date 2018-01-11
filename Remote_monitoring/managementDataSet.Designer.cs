@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Remote_monitoring.yang {
+namespace Remote_monitoring {
     
     
     /// <summary>
@@ -645,7 +645,7 @@ namespace Remote_monitoring.yang {
         }
     }
 }
-namespace Remote_monitoring.yang.managementDataSetTableAdapters {
+namespace Remote_monitoring.managementDataSetTableAdapters {
     
     
     /// <summary>

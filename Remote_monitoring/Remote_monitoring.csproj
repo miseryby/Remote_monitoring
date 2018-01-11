@@ -45,15 +45,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="managementDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>managementDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="yang\FormResources.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yang\FormResources.Designer.cs">
+      <DependentUpon>FormResources.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yang\FormUserAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yang\FormUserAdd.Designer.cs">
+      <DependentUpon>FormUserAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="yang\DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="yang\managementDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>managementDataSet.xsd</DependentUpon>
+    <Compile Include="yang\FormPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yang\FormPerson.Designer.cs">
+      <DependentUpon>FormPerson.cs</DependentUpon>
     </Compile>
     <Compile Include="yang\Form1.cs">
       <SubType>Form</SubType>
@@ -74,6 +92,12 @@
     </Compile>
     <Compile Include="yang\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yang\FormUserDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yang\FormUserDelete.Designer.cs">
+      <DependentUpon>FormUserDelete.cs</DependentUpon>
     </Compile>
     <Compile Include="yang\FormUserShow.cs">
       <SubType>Form</SubType>
@@ -100,9 +124,29 @@
     <EmbeddedResource Include="yang\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="yang\FormResources.resx">
+      <DependentUpon>FormResources.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yang\FormUserAdd.resx">
+      <DependentUpon>FormUserAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yang\FormUserDelete.resx">
+      <DependentUpon>FormUserDelete.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="yang\FormUserShow.resx">
       <DependentUpon>FormUserShow.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="managementDataSet.xsc">
+      <DependentUpon>managementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="managementDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>managementDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="managementDataSet.xss">
+      <DependentUpon>managementDataSet.xsd</DependentUpon>
+    </None>
     <None Include="yang\DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
@@ -113,17 +157,6 @@
     </None>
     <None Include="yang\DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="yang\managementDataSet.xsc">
-      <DependentUpon>managementDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="yang\managementDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>managementDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="yang\managementDataSet.xss">
-      <DependentUpon>managementDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

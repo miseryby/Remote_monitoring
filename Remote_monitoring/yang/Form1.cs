@@ -31,19 +31,7 @@ namespace Remote_monitoring
         private void button1_Click(object sender, EventArgs e)
         {
             
-            string constr = "server=.;database=management;integrated security=SSPI";
-            SqlConnection connection = new SqlConnection(constr);
-            connection.Open();
-            SqlCommand cmd = new SqlCommand("select Mname from  Table_1", connection);
-            SqlDataAdapter dataAdapter = new SqlDataAdapter();
-            dataAdapter.SelectCommand = cmd;
-            DataSet ds = new DataSet();
-            dataAdapter.Fill(ds);
-            listBox1.DataSource = ds.Tables[0].DefaultView;
-            listBox1.DisplayMember = "Mname";
-            connection.Close();
-            String name = textBoxNa.Text;
-            String password = textBoxPw.Text;
+            String name = textBoxNa.Text;          String password = textBoxPw.Text;
             yang.FormMain formMain = new yang.FormMain();
 
             if (name=="admin" && password.Equals("admin"))
