@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,38 @@ namespace dataProcess
 {
     public static  class dataProcessing
     {
+        private static Queue Q = new Queue(10);
+        //存放图片数据
+        public static void Save(byte[] s)
+        {
+            //超出10
+            if (Q.Count == 10)
+            {
 
+            }
+            //不超过10时存入队尾
+            else
+            {
+                Q.Enqueue(s);
+            }
+        }
+        
+       public  static byte[] Readcode()
+        {
+            //队列不为空
+            if (Q.Count > 0)
+            {
+                //读取第一个指令
+                byte[] code = (byte[])Q.Dequeue();
+                return code;
+            }
+            //队列为空
+            else
+            {
+                byte[] code = { 0 };
+                return code;
+            }
+        }
         public static char isImgOrStr(byte[] source,byte[] data)
         {
                 byte[] bt = new byte[5];//区分究竟是进程信息还是图片信息
@@ -35,4 +67,5 @@ namespace dataProcess
            return System.Text.Encoding.Default.GetString(data);
         }
     }
+
 }
