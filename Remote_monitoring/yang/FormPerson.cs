@@ -21,17 +21,29 @@ namespace Remote_monitoring.yang
 
         private void FormPerson_Load(object sender, EventArgs e)
         {
-                byte[] b =dataProcess.dataProcessing.ReadPic();
-                MemoryStream stream = new MemoryStream(b);
-                pictureBox1.Image = Image.FromStream(stream);
+            string[] userarr= { "1", "2", "3", "4" };
+            for(int i =0;i<userarr.Length;i++)
+            {
+                listBox1.Items.Add(userarr[i]);
+            }
+           
+                //byte[] b =dataProcess.dataProcessing.ReadPic();
+                //MemoryStream stream = new MemoryStream(b);
+                //pictureBox1.Image = Image.FromStream(stream);
             }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             
-            byte[] b = dataProcess.dataProcessing.ReadPic();
-            MemoryStream stream = new MemoryStream(b);
-            pictureBox1.Image = Image.FromStream(stream);
+            //byte[] b = dataProcess.dataProcessing.ReadPic();
+            //MemoryStream stream = new MemoryStream(b);
+            //pictureBox1.Image = Image.FromStream(stream);
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string usertemp = listBox1.SelectedItem.ToString();
+            listBox1.Items.Add(usertemp);
         }
     }
 
