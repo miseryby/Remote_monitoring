@@ -43,5 +43,11 @@
     <Compile Include="Remote_Server.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dataProcess\dataProcess.csproj">
+      <Project>{DEDB4CCF-FC89-418D-BB79-BBDD4984BA60}</Project>
+      <Name>dataProcess</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

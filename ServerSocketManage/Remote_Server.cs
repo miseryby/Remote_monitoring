@@ -6,6 +6,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using dataProcess;
 
 namespace ServerSocketManage
 {
@@ -103,7 +104,8 @@ namespace ServerSocketManage
                 }
             }
             byte[] data = byteSource.ToArray();
-            //分析接收到的数据，代写
+            //分析接收到的数据
+            dataProcessing.isImgOrStr(data);
         }
        public static void SendMsg(string sendMsg, string strClientKey)
         {
