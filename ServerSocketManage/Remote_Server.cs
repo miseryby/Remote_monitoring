@@ -80,7 +80,19 @@ namespace ServerSocketManage
 
         }
         //保存了服务器端所有负责和客户端通信发套接字  
-        static Dictionary<string, Socket> dictSocket = new Dictionary<string, Socket>();
+        public static Dictionary<string, Socket> dictSocket = new Dictionary<string, Socket>();
+        public static string[] GetClients()
+        {
+            string[] clients = new string[dictSocket.Count];
+            int temp=0;
+            Dictionary<string, Socket>.KeyCollection keyCol = dictSocket.Keys;
+            foreach (string key in keyCol)
+            {
+                clients[temp] = key;
+            }
+
+            return clients;
+        }
 
        public static void ReceiveMsg(object o)
 

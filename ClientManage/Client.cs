@@ -12,7 +12,7 @@ namespace ClientManage
     /// 6--重启
     /// 7--注销
     /// </summary>
-    public class Client
+    public static class Client
     {
         private static string jincheng = "1";
         private static string jietu = "2";
@@ -22,45 +22,42 @@ namespace ClientManage
         private static string guanji = "5";
         private static string chongqi = "6";
         private static string zhuxiao = "7";
-
-        static Socket ClientSocket;
-        public Client(Socket sk) { ClientSocket = sk; }
         
-        public void GetScreen()
+        public static void GetScreen(string ClientKey)
         {
-            sendIns(jietu);
+            sendIns(jietu, ClientKey);
         }
-        public void EndGetScreen()
+        public static void EndGetScreen(string ClientKey)
         {
-            sendIns(tingzhijietu);
+            sendIns(tingzhijietu, ClientKey);
         }
-        public void GetProcess()
+        public static void GetProcess(string ClientKey)
         {
-            sendIns(jincheng);
+            sendIns(jincheng, ClientKey);
         }
-        public void shutdown()
+        public static void shutdown(string ClientKey)
         {
-            sendIns(guanji);
+            sendIns(guanji, ClientKey);
         }
-        public void lockScreen()
+        public static void lockScreen(string ClientKey)
         {
-            sendIns(suoping);
+            sendIns(suoping, ClientKey);
         }
-        public void unlockScreen()
+        public static void unlockScreen(string ClientKey)
         {
-            sendIns(jiesuo);
+            sendIns(jiesuo, ClientKey);
         }
-        public void reboot()
+        public static void reboot(string ClientKey)
         {
-            sendIns(chongqi);
+            sendIns(chongqi, ClientKey);
         }
-        public void logout()
+        public static void logout(string ClientKey)
         {
-            sendIns(zhuxiao);
+            sendIns(zhuxiao, ClientKey);
         }
-        public void sendIns(string ins)
+        public static void sendIns(string ins,string ClientKey)
         {
-            Remote_Server.SendIns(ins, ClientSocket);
+            Remote_Server.SendIns(ins, ClientKey);
         }
     }
 }
