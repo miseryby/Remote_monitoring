@@ -21,17 +21,20 @@ namespace Remote_monitoring.yang
 
         private void FormPerson_Load(object sender, EventArgs e)
         {
-            dataProcessing.
-            string path = "C: \\Users\\~\\source\\repos\\Remote_monitoring\\Remote_monitoring\\yang\\image\\42.jpg";
-            using (FileStream file = new FileStream(path, FileMode.Open))
-            {
-                byte[] b = new byte[file.Length];
-                file.Read(b, 0, b.Length);
+                byte[] b =dataProcess.dataProcessing.ReadPic();
                 MemoryStream stream = new MemoryStream(b);
                 pictureBox1.Image = Image.FromStream(stream);
             }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            
+            byte[] b = dataProcess.dataProcessing.ReadPic();
+            MemoryStream stream = new MemoryStream(b);
+            pictureBox1.Image = Image.FromStream(stream);
         }
+    }
 
        
     }
-}
+
