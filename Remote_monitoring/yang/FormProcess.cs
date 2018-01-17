@@ -21,10 +21,18 @@ namespace Remote_monitoring.yang
 
         private void Form1_Load(object sender, System.EventArgs e)
         {
-            
-        }
-        
+            listView1.Clear();
+            string[,] str = dataProcess.dataProcessing.ReadPro();
+            ListViewItem cj;
 
+            for (int i = 0; i < str.GetLength(0); i++)
+            {
+                cj = new ListViewItem(str[i, 0]);
+                cj.SubItems.Add(str[i, 1]);
+                listView1.Items.Add(cj);
+            }
+
+        }
         private void button1_Click(object sender, System.EventArgs e)
         {
             MyItem item1 = new MyItem();
