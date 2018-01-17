@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace dataProcess
 {
     public static class dataProcessing
     {
         private static string[,] processes;
+        private static string[] clients;
         private static Queue Q = new Queue(10);
         //存放图片数据
         private static void SavePro(byte[] s)
@@ -52,7 +49,7 @@ namespace dataProcess
             }
         }
         /// <summary>
-        /// 分析数据是图片还是进程
+        /// 分析数据是图片还是进程并做处理
         /// </summary>
         /// <param name="source"></param>
         public static void isImgOrStr(byte[] source)
