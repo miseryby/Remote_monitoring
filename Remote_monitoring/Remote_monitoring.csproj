@@ -187,6 +187,14 @@
       <Project>{DEDB4CCF-FC89-418D-BB79-BBDD4984BA60}</Project>
       <Name>dataProcess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ServerSocketManage\ServerSocketManage.csproj">
+      <Project>{cc87457b-b27f-45c0-8f50-7690ecde26bb}</Project>
+      <Name>ServerSocketManage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserManage\ClientManage.csproj">
+      <Project>{3f64fd67-a36f-448a-85fd-78969247ea03}</Project>
+      <Name>ClientManage</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
