@@ -1,4 +1,5 @@
-﻿using System;
+﻿using dataProcess;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,7 @@ namespace Remote_monitoring.yang
 
         private void FormPerson_Load(object sender, EventArgs e)
         {
+            dataProcessing.
             string path = "C: \\Users\\~\\source\\repos\\Remote_monitoring\\Remote_monitoring\\yang\\image\\42.jpg";
             using (FileStream file = new FileStream(path, FileMode.Open))
             {

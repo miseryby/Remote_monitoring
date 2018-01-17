@@ -182,5 +182,11 @@
   <ItemGroup>
     <None Include="Resources\background.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dataProcess\dataProcess.csproj">
+      <Project>{DEDB4CCF-FC89-418D-BB79-BBDD4984BA60}</Project>
+      <Name>dataProcess</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

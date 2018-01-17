@@ -11,7 +11,7 @@ namespace dataProcess
     {
         private static Queue Q = new Queue(10);
         //存放图片数据
-        public static void Save(byte[] s)
+        public static void SavePic(byte[] s)
         {
             //超出10
             if (Q.Count == 10)
@@ -25,7 +25,7 @@ namespace dataProcess
             }
         }
         
-       public  static byte[] Readcode()
+       public  static byte[] ReadPic()
         {
             //队列不为空
             if (Q.Count > 0)
