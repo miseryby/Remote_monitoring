@@ -51,38 +51,20 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
-            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -140,6 +122,7 @@
             this.桌面监控ToolStripMenuItem.Name = "桌面监控ToolStripMenuItem";
             this.桌面监控ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
             this.桌面监控ToolStripMenuItem.Text = "桌面监控";
+            this.桌面监控ToolStripMenuItem.Click += new System.EventHandler(this.桌面监控ToolStripMenuItem_Click);
             // 
             // 进程监控ToolStripMenuItem
             // 
@@ -198,14 +181,16 @@
             // 退出当前程序ToolStripMenuItem
             // 
             this.退出当前程序ToolStripMenuItem.Name = "退出当前程序ToolStripMenuItem";
-            this.退出当前程序ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.退出当前程序ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.退出当前程序ToolStripMenuItem.Text = "退出当前程序";
+            this.退出当前程序ToolStripMenuItem.Click += new System.EventHandler(this.退出当前程序ToolStripMenuItem_Click);
             // 
             // 重新登陆ToolStripMenuItem
             // 
             this.重新登陆ToolStripMenuItem.Name = "重新登陆ToolStripMenuItem";
-            this.重新登陆ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.重新登陆ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.重新登陆ToolStripMenuItem.Text = "重新登陆";
+            this.重新登陆ToolStripMenuItem.Click += new System.EventHandler(this.重新登陆ToolStripMenuItem_Click);
             // 
             // menuStrip1
             // 
@@ -234,7 +219,7 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            
             // 
             // toolStrip1
             // 
@@ -243,123 +228,14 @@
             this.toolStripButton1,
             this.toolStripButton2,
             this.toolStripButton3,
-            this.toolStripButton4});
+            this.toolStripButton4,
+            this.toolStripButton5,
+            this.toolStripButton6});
             this.toolStrip1.Location = new System.Drawing.Point(0, 28);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1097, 27);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Location = new System.Drawing.Point(208, 500);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox7.TabIndex = 27;
-            this.pictureBox7.TabStop = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(874, 448);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 15);
-            this.label7.TabIndex = 26;
-            this.label7.Text = "label7";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(578, 448);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 15);
-            this.label6.TabIndex = 25;
-            this.label6.Text = "label6";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(291, 448);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 15);
-            this.label5.TabIndex = 24;
-            this.label5.Text = "label5";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(874, 247);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 15);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "label4";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(578, 247);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 15);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "label3";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(291, 247);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 15);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "label2";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Location = new System.Drawing.Point(768, 281);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(250, 150);
-            this.pictureBox6.TabIndex = 20;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(486, 281);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(250, 150);
-            this.pictureBox5.TabIndex = 19;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(208, 281);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(250, 150);
-            this.pictureBox4.TabIndex = 18;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(768, 81);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(250, 150);
-            this.pictureBox3.TabIndex = 17;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(486, 81);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(250, 150);
-            this.pictureBox2.TabIndex = 16;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Remote_monitoring.Properties.Resources.a977034b02340148e0758ea988efd86e5645b7ad46b9f_36o9AE;
-            this.pictureBox1.Location = new System.Drawing.Point(208, 81);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 150);
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
             // 
             // toolStripButton1
             // 
@@ -368,6 +244,7 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(63, 24);
             this.toolStripButton1.Text = "监控";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripButton2
             // 
@@ -376,14 +253,16 @@
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(63, 24);
             this.toolStripButton2.Text = "用户";
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // toolStripButton3
             // 
             this.toolStripButton3.Image = global::Remote_monitoring.Properties.Resources.filesum;
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(108, 24);
-            this.toolStripButton3.Text = "截图和进程";
+            this.toolStripButton3.Size = new System.Drawing.Size(63, 24);
+            this.toolStripButton3.Text = "截图";
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // toolStripButton4
             // 
@@ -393,89 +272,86 @@
             this.toolStripButton4.Size = new System.Drawing.Size(93, 24);
             this.toolStripButton4.Text = "系统配置";
             // 
+            // toolStripButton5
+            // 
+            this.toolStripButton5.Image = global::Remote_monitoring.Properties.Resources.statics;
+            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.Size = new System.Drawing.Size(63, 24);
+            this.toolStripButton5.Text = "进程";
+            this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
+            // 
+            // toolStripButton6
+            // 
+            this.toolStripButton6.Image = global::Remote_monitoring.Properties.Resources.exit;
+            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton6.Name = "toolStripButton6";
+            this.toolStripButton6.Size = new System.Drawing.Size(63, 24);
+            this.toolStripButton6.Text = "退出";
+            this.toolStripButton6.Click += new System.EventHandler(this.toolStripButton6_Click);
+            // 
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
-            this.toolStripProgressBar1,
-            this.toolStripDropDownButton1,
-            this.toolStripSplitButton1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 518);
+            this.toolStripStatusLabel2,
+            this.toolStripStatusLabel3});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 709);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1097, 26);
+            this.statusStrip1.Size = new System.Drawing.Size(1097, 25);
             this.statusStrip1.TabIndex = 28;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(167, 21);
-            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
-            // 
-            // toolStripProgressBar1
-            // 
-            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
-            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 20);
-            // 
-            // toolStripDropDownButton1
-            // 
-            this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
-            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(34, 24);
-            this.toolStripDropDownButton1.Text = "toolStripDropDownButton1";
-            // 
-            // toolStripSplitButton1
-            // 
-            this.toolStripSplitButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripSplitButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSplitButton1.Image")));
-            this.toolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripSplitButton1.Name = "toolStripSplitButton1";
-            this.toolStripSplitButton1.Size = new System.Drawing.Size(39, 24);
-            this.toolStripSplitButton1.Text = "toolStripSplitButton1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 21);
             // 
             // timer2
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::Remote_monitoring.Properties.Resources.background;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(0, 58);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1097, 648);
+            this.panel1.TabIndex = 29;
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(69, 20);
+            this.toolStripStatusLabel2.Text = "系统时间";
+            // 
+            // toolStripStatusLabel3
+            // 
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(167, 20);
+            this.toolStripStatusLabel3.Text = "toolStripStatusLabel3";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1097, 544);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1097, 734);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "FormMain";
             this.Text = "FormMain";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -505,28 +381,17 @@
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
-        private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton1;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.ToolStripButton toolStripButton5;
+        private System.Windows.Forms.ToolStripButton toolStripButton6;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
     }
 }

@@ -13,6 +13,7 @@ namespace Remote_monitoring
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
@@ -48,8 +49,13 @@ namespace Remote_monitoring
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("退出程序");
-            System.Environment.Exit(0);
+            if (MessageBox.Show("是否要退出程序?", "确认信息", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+
+            {
+
+                Application.ExitThread();// 强制中止调用线程上的所有消息，同样面临其它线程无法正确退出的问题；
+
+            }
         }
     }
 }

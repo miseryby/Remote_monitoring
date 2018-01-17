@@ -45,10 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="managementDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>managementDataSet.xsd</DependentUpon>
+    <Compile Include="yang\FormProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yang\FormProcess.Designer.cs">
+      <DependentUpon>FormProcess.cs</DependentUpon>
     </Compile>
     <Compile Include="yang\FormResources.cs">
       <SubType>Form</SubType>
@@ -124,6 +125,12 @@
     <EmbeddedResource Include="yang\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="yang\FormPerson.resx">
+      <DependentUpon>FormPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yang\FormProcess.resx">
+      <DependentUpon>FormProcess.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="yang\FormResources.resx">
       <DependentUpon>FormResources.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,17 +143,6 @@
     <EmbeddedResource Include="yang\FormUserShow.resx">
       <DependentUpon>FormUserShow.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="managementDataSet.xsc">
-      <DependentUpon>managementDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="managementDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>managementDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="managementDataSet.xss">
-      <DependentUpon>managementDataSet.xsd</DependentUpon>
-    </None>
     <None Include="yang\DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
@@ -182,6 +178,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="yang\image\a977034b02340148e0758ea988efd86e5645b7ad46b9f-36o9AE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
