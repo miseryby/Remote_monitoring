@@ -55,7 +55,7 @@ namespace ClientManage
         {
             sendIns(zhuxiao, ClientKey);
         }
-        public static void sendIns(string ins,string ClientKey)
+        private static void sendIns(string ins,string ClientKey)
         {
             Remote_Server.SendIns(ins, ClientKey);
         }
